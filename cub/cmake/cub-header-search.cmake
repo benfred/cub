@@ -1,5 +1,6 @@
 unset(_CUB_VERSION_INCLUDE_DIR CACHE) # Clear old result to force search
 find_path(_CUB_VERSION_INCLUDE_DIR cub/version.cuh
+  NO_CMAKE_FIND_ROOT_PATH
   NO_DEFAULT_PATH # Only search explicit paths below:
   PATHS
     "${CMAKE_CURRENT_LIST_DIR}/../.."            # Source tree
